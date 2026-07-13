@@ -1,0 +1,126 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class ExceptionHandlingDemo {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        // Handling ArithmeticException
+        try {
+            System.out.print("Enter two numbers to divide: ");
+            int num1 = scanner.nextInt();
+            int num2 = scanner.nextInt();
+            System.out.println("Result: " + (num1 / num2));
+        } catch (ArithmeticException e) {
+            System.out.println("Error: Division by zero.");
+        }
+
+        // Handling NullPointerException
+        try {
+            System.out.print("Enter a string (or leave blank for null): ");
+            scanner.nextLine();
+            String str = scanner.nextLine();
+
+            if (str.isEmpty()) {
+                str = null;
+            }
+
+            System.out.println("String length: " + str.length());
+
+        } catch (NullPointerException e) {
+            System.out.println("Error: Null object.");
+        }
+
+        // Handling NumberFormatException
+        try {
+            System.out.print("Enter a number as a string: ");
+            String input = scanner.next();
+            System.out.println("Parsed number: " + Integer.parseInt(input));
+
+        } catch (NumberFormatException e) {
+            System.out.println("Error: Invalid number format.");
+        }
+
+        // Handling ArrayIndexOutOfBoundsException
+        try {
+            System.out.print("Array size: ");
+            int size = scanner.nextInt();
+
+            int[] array = new int[size];
+
+            System.out.println("Enter " + size + " elements:");
+            for (int i = 0; i < size; i++) {
+                array[i] = scanner.nextInt();
+            }
+
+            System.out.print("Index to access: ");
+            int index = scanner.nextInt();
+
+            System.out.println("Element: " + array[index]);
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Error: Invalid array index.");
+        }
+
+        // Handling StringIndexOutOfBoundsException
+        try {
+            System.out.print("Enter a string: ");
+            scanner.nextLine();
+            String text = scanner.nextLine();
+
+            System.out.print("Index in string: ");
+            int charIndex = scanner.nextInt();
+
+            System.out.println("Character: " + text.charAt(charIndex));
+
+        } catch (StringIndexOutOfBoundsException e) {
+            System.out.println("Error: Invalid string index.");
+        }
+
+        // Handling IOException
+        try {
+            System.out.print("File to read: ");
+            String fileName = scanner.next();
+
+            BufferedReader reader = new BufferedReader(new FileReader(fileName));
+            System.out.println("File contents: " + reader.readLine());
+            reader.close();
+
+        } catch (IOException e) {
+            System.out.println("Error: File read issue.");
+        }
+
+        try {
+            System.out.print("Enter a file name to write to: ");
+            String fileName = scanner.next();
+
+            BufferedWriter writer = new BufferedWriter(new FileWriter(fileName));
+            writer.write("Hello, this is a test file!");
+            writer.close();
+
+            System.out.println("File written successfully.");
+
+        } catch (IOException e) {
+            System.out.println("Error: Could not write to file.");
+        }
+
+        // Handling IllegalArgumentException
+        try {
+            System.out.print("Enter a positive number: ");
+            int positiveNumber = scanner.nextInt();
+
+            if (positiveNumber < 0) {
+                throw new IllegalArgumentException("Must be positive.");
+            }
+
+            System.out.println("You entered: " + positiveNumber);
+
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        scanner.close();
+    }
+}
