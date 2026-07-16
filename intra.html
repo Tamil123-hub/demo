@@ -1,0 +1,115 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Intra Document Linking</title> 
+    <style> 
+        body{ 
+            font-family: Arial, sans-serif; 
+            background-color: #f4f4f4; 
+            text-align: center; 
+            margin: 30px; 
+            height: 30%;
+        } 
+        h1{ 
+            color: darkblue; 
+        } 
+        button{ 
+            padding: 10px 15px; 
+            margin: 8px; 
+            font-size: 15px; 
+            cursor: pointer; 
+        } 
+        section{ 
+            display: none; 
+            background-color: white; 
+            border: 2px solid #333; 
+            border-radius: 8px; 
+            width: 70%; 
+            height: 50%;
+            margin: 20px auto; 
+            padding: 20px; 
+            text-align: left; 
+        } 
+        h2{ 
+            color: darkred; 
+        } 
+        h3{ 
+            color: darkgreen; 
+        } 
+        ul, ol{ 
+            margin-left: 20px; 
+        } 
+    </style> 
+</head> 
+<body> 
+<h1>Intra Document Linking</h1> 
+<button onclick="show('intro')">Introduction</button> 
+<button onclick="show('details')">Details</button> 
+<button onclick="show('conclusion')">Conclusion</button> 
+ 
+<section id="intro"> 
+    <h2>Introduction</h2> 
+    <h3>What is Intra-Document Linking?</h3> 
+    <p> 
+        Intra-document linking is a technique used to navigate between 
+        different sections of the same webpage.  
+ 
+    <h3>Purpose</h3> 
+    <ul> 
+        <li>Provides easy navigation.</li> 
+        <li>Organizes webpage content.</li> 
+    </ul> 
+ 
+    <h3>Applications</h3> 
+    <ul> 
+        <li>Educational websites</li> 
+        <li>Online tutorials</li> 
+    </ul> 
+</section> 
+<section id="details"> 
+    <h2>Details</h2> 
+    <h3>HTML</h3> 
+    <p> 
+        HTML is used to create the structure of the webpage. It contains 
+        buttons and different content sections. 
+    </p> 
+    <h3>CSS</h3> 
+    <p> 
+        CSS is used to style the webpage by adding colors, borders, 
+        spacing, fonts, and alignment. 
+    </p> 
+    <h3>Working Steps</h3> 
+    <ol> 
+        <li>User clicks a navigation button.</li> 
+        <li>JavaScript hides all sections.</li> 
+    </ol> 
+</section> 
+<section id="conclusion"> 
+    <h2>Conclusion</h2> 
+    <h3>Advantages</h3> 
+    <ul> 
+        <li>Easy to understand.</li> 
+        <li>Improves webpage navigation.</li> 
+        <li>Keeps content well organized.</li> 
+    </ul> 
+    <h3>Summary</h3> 
+    <p> 
+        Intra-document linking helps users move between different sections 
+        of the same webpage quickly and efficiently. It is commonly used 
+        in websites that contain large amounts of information. 
+    </p> 
+</section> 
+<script> 
+function show(id) 
+{ 
+    document.getElementById("intro").style.display = "none"; 
+    document.getElementById("details").style.display = "none"; 
+    document.getElementById("conclusion").style.display = "none"; 
+ 
+    document.getElementById(id).style.display = "block"; 
+} 
+</script> 
+</body> 
+</html>
