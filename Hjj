@@ -1,0 +1,105 @@
+Log in
+You said:
+Features of java programming
+
+
+ChatGPT said:
+Features of Java Programming
+
+Simple – Java has a simple syntax and removes complex features like pointers and multiple inheritance.
+Object-Oriented – Everything is based on objects, making programs modular, reusable, and easy to maintain.
+Platform Independent – Java programs run on any operating system using the Java Virtual Machine (JVM). This is known as "Write Once, Run Anywhere (WORA)."
+Portable – Java applications can be moved from one system to another without modification.
+Secure – Java provides built-in security features such as bytecode verification, exception handling, and no direct memory access.
+Robust – Strong memory management, exception handling, and garbage collection make Java reliable.
+Multithreaded – Java supports multiple threads, allowing several tasks to run simultaneously.
+Distributed – Java supports network-based applications using APIs like RMI, sockets, and web services.
+High Performance – The Just-In-Time (JIT) compiler improves execution speed by compiling bytecode into native machine code.
+Dynamic – Java can load classes and libraries at runtime, making it flexible and extensible.
+Exam Tip (Short Answer):
+
+Simple
+Object-Oriented
+Platform Independent
+Portable
+Secure
+Robust
+Multithreaded
+Distributed
+High Performance
+Dynamic
+
+
+You said:
+Control flow statements and types explain
+
+
+ChatGPT said:
+Control Flow Statements in Java
+Control flow statements determine the order in which program statements are executed. They allow a program to make decisions, repeat tasks, or jump to another part of the code.
+
+Types of Control Flow Statements
+1. Decision-Making Statements
+These statements execute different blocks of code based on a condition.
+
+Types:
+
+if – Executes a block if the condition is true.
+if-else – Executes one block if the condition is true, otherwise executes another block.
+else-if ladder – Checks multiple conditions one by one.
+switch – Selects one block of code from multiple options based on an expression.
+Example:
+
+int age = 18;
+
+if (age >= 18) {
+    System.out.println("Eligible to vote");
+} else {
+    System.out.println("Not eligible");
+}
+
+2. Looping (Iteration) Statements
+These statements execute a block of code repeatedly until a condition becomes false.
+
+Types:
+
+for loop – Used when the number of iterations is known.
+while loop – Executes while the condition is true.
+do-while loop – Executes at least once, then repeats while the condition is true.
+Example:
+
+for (int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+
+3. Jump (Branching) Statements
+These statements transfer control from one part of the program to another.
+
+Types:
+
+break – Terminates a loop or switch statement.
+continue – Skips the current iteration and moves to the next iteration of the loop.
+return – Exits from a method and optionally returns a value.
+Example:
+
+for (int i = 1; i <= 5; i++) {
+    if (i == 3)
+        break;
+    System.out.println(i);
+}
+
+Output:
+
+1
+2
+
+Summary
+Type	Statements	Purpose
+Decision-Making	if, if-else, else-if, switch	Makes decisions based on conditions
+Looping	for, while, do-while	Repeats a block of code
+Jump	break, continue, return	Changes the normal flow of execution
+
+Definition for exams:
+Control flow statements are statements that control the order in which a program's instructions are executed. They are classified into decision-making statements, looping statements, and jump statements.
+
+
