@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTORS</title>
+    <style>
+        /* Group Selector */
+        h1,h2,p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .ll{
+            background-color: brown;
+            width: 300px;
+            height: 170px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        /* Class Selector */
+        .f1{
+            background-color:blueviolet;
+            border-radius: 20px;
+            width: 300px;
+            height: 170px;
+            position: absolute;
+            left: 520px;
+           top: 100px;
+        }
+        /* ID Selector */
+        #f2{
+            background-color: chocolate;
+             width: 300px;
+            height: 170px;
+            border-radius: 20px;
+            position: absolute;
+            top: 100px;
+            left: 1020px;
+        }
+        .f3{
+            background-color: darkgoldenrod;
+             width: 300px;
+            height: 170px;
+            border-radius: 20px;
+            position: absolute;
+            top: 350px;
+            left: 300px;
+        }
+        .f4{
+            background-color: darkgreen;
+            width: 300px;
+            height: 170px;
+            border-radius: 20px;
+            position: absolute;
+            top:350px ;
+            left: 800px;
+        }
+        /* Element Selector */
+        p{
+            font-size: 17px;
+        }
+        /* Universel Selector */
+        *{
+            color:aquamarine;
+        }
+        body{
+            
+            background: linear-gradient(90deg,green,rgb(185, 142, 226));
+        }
+    </style>
+ </head>
+ <body style="padding: 20px;" >
+    <center><h1 style="border-radius: 20px; background-color: blue;">CSS Selectors</h1></center>
+    <div class="ll">
+        <center><h2>Element Selector</h2>
+            <p >Matches elements by their HTML<br> tag name(e.g., p, h1, div).</p>
+        </center>
+    </div>
+    <div class="f1">
+        <center><h2>Class selector</h2>
+            <p >Matches elements that<br> have a specific class attribute.<br> You can reuse classes<br> on multiple elements.(e.g.,.f1,f2)</p>
+        </center>
+    </div>
+    <div id="f2">
+        <center><h2>ID Selector</h2>
+            <p>Matches a unique element<br> with a specific id attribute.<br> An ID should only be<br> used once per page.(eg:#f3)</p>
+        </center>
+    </div>
+    <div>
+        <center class="f3">
+            <h2>Universal Selector</h2>
+            <p>Matches every single element on the page. Frequently used for global resets (like stripping margins).(eg:*)</p>
+        </center>
+    </div>
+    <div class="f4">
+        <center>
+            <h2>
+                Group Selector
+            </h2>
+            <p>Matches the selected elements<br> on the web page.<br>It allow user match a particular<br> selectd elemets.(eg:h1,.f1,#f3)
+            </p>
+        </center>
+    </div>
+</body>
+</html>
+
+
