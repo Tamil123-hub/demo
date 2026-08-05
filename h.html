@@ -1,107 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="meat1.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SELECTORS</title>
+    <title>Straw Appetie</title>
     <style>
-        /* Group Selector */
-        h1,h2,p{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .ll{
-            background-color: brown;
-            width: 300px;
-            height: 170px;
-            border-radius: 20px;
+        .pre{
             display: flex;
-            justify-content: center;
+            flex-direction: row;
         }
-        /* Class Selector */
-        .f1{
-            background-color:blueviolet;
-            border-radius: 20px;
-            width: 300px;
-            height: 170px;
-            position: absolute;
-            left: 520px;
-           top: 100px;
-        }
-        /* ID Selector */
-        #f2{
-            background-color: chocolate;
-             width: 300px;
-            height: 170px;
-            border-radius: 20px;
-            position: absolute;
-            top: 100px;
-            left: 1020px;
-        }
-        .f3{
-            background-color: darkgoldenrod;
-             width: 300px;
-            height: 170px;
-            border-radius: 20px;
-            position: absolute;
-            top: 350px;
-            left: 300px;
-        }
-        .f4{
-            background-color: darkgreen;
-            width: 300px;
-            height: 170px;
-            border-radius: 20px;
-            position: absolute;
-            top:350px ;
-            left: 800px;
-        }
-        /* Element Selector */
-        p{
-            font-size: 17px;
-        }
-        /* Universel Selector */
-        *{
-            color:aquamarine;
+        .dri{
+            display: flex;
+            flex-direction: row;
         }
         body{
-            
-            background: linear-gradient(90deg,green,rgb(185, 142, 226));
+            margin: 0;
+            padding: 0;
+            background-image: url(Dint.jpg);
+            width: 1920px;
+            height: 1080px;
         }
+        .ma{
+            background-color:chocolate;
+            width: fit-content;
+            display: flex;
+            justify-self: center;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        .top{
+            width: auto;
+            height: 150px;
+            background-color: rgb(205, 177, 231);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 2px 2px 2px black;
+        }
+        .ti{
+            margin-top: 60px;
+        }
+        input{
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .bi,.par,.dosa,.tha,.noo,.jui{
+            padding: 10px;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            margin: 20px;
+            box-shadow:1px 1px 1px 1px black;     
+           }
+        .item{
+            width: 100px;
+            height: 100px;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 9px;
+           }
+           button,input{
+            border-radius: 3px;
+            height: 50px;
+            box-shadow: 1px 1px 2px black;
+           }
+          table{
+            margin-right: 0px;
+          }
+          .order{
+              width:100px;
+              height:100px;
+              background-color:red;
+              -webkit-backdrop-filter:blur(12px);
+              backdrop-filter:blur(12px);
+              display:flex;
+              justify-content:center;
+          }
     </style>
- </head>
- <body style="padding: 20px;" >
-    <center><h1 style="border-radius: 20px; background-color: blue;">CSS Selectors</h1></center>
-    <div class="ll">
-        <center><h2>Element Selector</h2>
-            <p >Matches elements by their HTML<br> tag name(e.g., p, h1, div).</p>
-        </center>
+</head>
+<body>
+    <div class="top">
+        <img src="straw.png" alt="">
+        <h1 class="ti">STRAW HAT FOODS</h1>
     </div>
-    <div class="f1">
-        <center><h2>Class selector</h2>
-            <p >Matches elements that<br> have a specific class attribute.<br> You can reuse classes<br> on multiple elements.(e.g.,.f1,f2)</p>
-        </center>
+
+    <h1 class="ma">MY DISHES</h1>
+    <div class="pre">
+        <div class="bi">
+        <center><h3>BIRIYANI</h3></center>
+        <center><img class="item" src="images.jpg" alt=""></center>
+        <center><h4>$200</h4></center>
+       <center><table>
+        <tr><td><button><h3>+</h3></button></td>
+        <td><input placeholder="Quantity" type="number"></td>
+    <td><button><h3>-</h3></button></td></tr>
+       </table></center>
     </div>
-    <div id="f2">
-        <center><h2>ID Selector</h2>
-            <p>Matches a unique element<br> with a specific id attribute.<br> An ID should only be<br> used once per page.(eg:#f3)</p>
+    <div class="par">
+        <center><h3>Parotta</h3>
         </center>
+        <center><img class="item"  src="parotta.jpg" alt=""></center>
+        <center><h4>$20</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number"></td>
+        <td><button><h3>-</h3></button></td></tr>
+        </table></center>
     </div>
-    <div>
-        <center class="f3">
-            <h2>Universal Selector</h2>
-            <p>Matches every single element on the page. Frequently used for global resets (like stripping margins).(eg:*)</p>
+    <div class="dosa">
+        <center><h3>Dosa</h3>
         </center>
+        <center><img class="item" src="dosa.jpg" alt=""></center>
+        <center><h4>$70</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input type="number" placeholder="Quantity" id=""></td>
+        <td><button><h3>-</h3></button></td></tr>
+        </table></center>
     </div>
-    <div class="f4">
-        <center>
-            <h2>
-                Group Selector
-            </h2>
-            <p>Matches the selected elements<br> on the web page.<br>It allow user match a particular<br> selectd elemets.(eg:h1,.f1,#f3)
-            </p>
-        </center>
+    <div class="tha">
+        <center><h3>Omelette Rice</h3></center>
+        <center><img src="omel.jpeg" alt="" class="item"></center>
+        <center><h4>$350</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3>-</h3></button></td></tr>
+        </table></center>
+    </div>
+     <div class="noo">
+        <center><h3>Ramen</h3></center>
+        <center><img src="ramen.jpg" alt="" class="item"></center>
+        <center><h4>$400</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3><h3>-</h3></h3></button></td></tr>
+        </table></center>
+    </div>
+    </div>
+    <h1 class="ma">MY DRINKS</h1>
+    <div class="dri">
+        <div class="jui">
+        <center><h3>Juices</h3></center>
+        <center><img src="juice.jpg" class="item"></center>
+        <center><h4>$400</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3><h3>-</h3></h3></button></td></tr>
+        </table></center>
+    </div>
+    <div class="noo">
+        <center><h3>Cofee/Tea</h3></center>
+        <center><img src="coffee.jpg" alt="" class="item"></center>
+        <center><h4>$400</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3><h3>-</h3></h3></button></td></tr>
+        </table></center>
+    </div>
+    <div class="noo">
+        <center><h3>Milk Shake</h3></center>
+        <center><img src="milk.jpg" alt="" class="item"></center>
+        <center><h4>$400</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3><h3>-</h3></h3></button></td></tr>
+        </table></center>
+    </div>
+    <div class="noo">
+        <center><h3>Ice Cream</h3></center>
+        <center><img src="ice.jpeg" alt="" class="item"></center>
+        <center><h4>$400</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3><h3>-</h3></h3></button></td></tr>
+        </table></center>
+    </div>
+    <div class="noo">
+        <center><h3>Soups</h3></center>
+        <center><img src="soup.jpg" alt="" class="item"></center>
+        <center><h4>$400</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3><h3>-</h3></h3></button></td></tr>
+        </table></center>
+    </div>
+    </div>
+    <div class="order">
+        <button>Confirm your orde</button>
     </div>
 </body>
 </html>
-
-
