@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="meat1.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straw Appetie</title>
+    <style>
+        .pre{
+            display: flex;
+            flex-direction: row;
+            margin-left: 65px;
+        }
+        .dri{
+            display: flex;
+            flex-direction: row;
+            margin-left: 65px;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(Dint.jpg);
+            width: 1920px;
+            height: 1080px;
+        }
+        .ma{
+            background-color:chocolate;
+            width: fit-content;
+            display: flex;
+            justify-self: center;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+        .top{
+            width: 1800px;
+            height: 150px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            justify-self: center;
+            box-shadow: 2px 2px 2px black;
+        }
+        .ti{
+            margin-top: 60px;
+        }
+        #jj{
+            transition: transform 10s ease;
+
+        }
+        #jj:hover{
+            transform:rotate(180deg)
+        }
+        input{
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .bi,.par,.dosa,.tha,.noo,.jui{
+            padding: 10px;
+            border-radius: 10px;
+            width: 300px;
+            height: 300px;
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            margin: 20px;
+            box-shadow:1px 1px 1px 1px black;     
+           }
+        .item{
+            width: 100px;
+            height: 100px;
+            box-shadow: 2px 2px 2px black;
+            border-radius: 9px;
+        transition: transform 4s ease;
+           }
+           .item:hover{
+            transform:rotate(45deg)
+           }
+           button,input{
+            border-radius: 3px;
+            height: 50px;
+            box-shadow: 1px 1px 2px black;
+           }
+          table{
+            margin-right: 0px;
+          }
+          .order{
+            width: 300px;
+            height: 300px;
+            box-shadow: 1px 1px 1px 1px black;
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            border-radius: 10px;
+          }
+          #nn{
+            margin-top: 10px;
+          }
+          #st{
+            background:linear-gradient(rgb(177, 221, 177),rgb(180, 180, 221));
+            border-radius: 4px;
+            width: fit-content;
+          }
+          button{
+            background-color: rgb(208, 171, 235);
+          }
+          .button{
+            width: 100px;
+            height: 100px;
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 6px;
+            opacity: 90%;
+          }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <img src="straw.png" alt="" id="jj">
+        <h1 class="ti">STRAW HAT FOODS</h1>
+    </div>
+    <h1 class="ma">MY DISHES</h1>
+    <div class="pre">
+        <div class="bi">
+        <center><h3>BIRIYANI</h3></center>
+        <center><img class="item" src="images.jpg" alt=""></center>
+        <center><h4>₹150</h4></center>
+       <center><table>
+        <tr><td><button><h3>+</h3></button></td>
+        <td><input placeholder="Quantity" type="number"></td>
+    <td><button><h3>-</h3></button></td></tr>
+       </table></center>
+    </div>
+    <div class="par">
+        <center><h3>Parotta</h3>
+        </center>
+        <center><img class="item"  src="parotta.jpg" alt=""></center>
+        <center><h4>₹15</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number"></td>
+        <td><button><h3>-</h3></button></td></tr>
+        </table></center>
+    </div>
+    <div class="dosa">
+        <center><h3>Dosa</h3>
+        </center>
+        <center><img class="item" src="dosa.jpg" alt=""></center>
+        <center><h4>₹50</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input type="number" placeholder="Quantity" id=""></td>
+        <td><button><h3>-</h3></button></td></tr>
+        </table></center>
+    </div>
+    <div class="tha">
+        <center><h3>Omelette Rice</h3></center>
+        <center><img src="omel.jpeg" alt="" class="item"></center>
+        <center><h4>₹200</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3>-</h3></button></td></tr>
+        </table></center>
+    </div>
+     <div class="noo">
+        <center><h3>Ramen</h3></center>
+        <center><img src="ramen.jpg" alt="" class="item"></center>
+        <center><h4>₹250</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3><h3>-</h3></h3></button></td></tr>
+        </table></center>
+    </div>
+    </div>
+    <h1 class="ma">MY DRINKS</h1>
+    <div class="dri">
+        <div class="jui">
+        <center><h3>Juices</h3></center>
+        <center><img src="juice.jpg" class="item"></center>
+        <center><h4>₹40</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3><h3>-</h3></h3></button></td></tr>
+        </table></center>
+    </div>
+    <div class="noo">
+        <center><h3>Cofee/Tea</h3></center>
+        <center><img src="coffee.jpg" alt="" class="item"></center>
+        <center><h4>₹20</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3><h3>-</h3></h3></button></td></tr>
+        </table></center>
+    </div>
+    <div class="noo">
+        <center><h3>Milk Shake</h3></center>
+        <center><img src="milk.jpg" alt="" class="item"></center>
+        <center><h4>₹15</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3><h3>-</h3></h3></button></td></tr>
+        </table></center>
+    </div>
+    <div class="noo">
+        <center><h3>Ice Cream</h3></center>
+        <center><img src="ice.jpeg" alt="" class="item"></center>
+        <center><h4>₹40</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3><h3>-</h3></h3></button></td></tr>
+        </table></center>
+    </div>
+    <div class="noo">
+        <center><h3>Soups</h3></center>
+        <center><img src="soup.jpg" alt="" class="item"></center>
+        <center><h4>₹30</h4></center>
+        <center><table>
+            <tr><td><button><h3>+</h3></button></td>
+            <td><input placeholder="Quantity" type="number" name="" id=""></td>
+        <td><button><h3><h3>-</h3></h3></button></td></tr>
+        </table></center>
+    </div>
+    </div>
+    <center>
+        <div class="order">
+            <img src="ord.png" id="nn" class="item">
+            <h3 id="st">Straw Hat Foods</h3>
+            <button class="button"><h2 style="color: rgb(21, 200, 206);">Confirm Order</h2>
+            </button>
+        </div>
+    </center>
+    <script>
+        // Load html2canvas library dynamically so you don't need to touch the HTML
+if (!document.getElementById("html2canvas-script")) {
+    const script = document.createElement("script");
+    script.id = "html2canvas-script";
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js";
+    document.head.appendChild(script);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    // 1. Target all food card containers across dishes and drinks
+    const itemCards = document.querySelectorAll(".pre > div, .dri > div");
+
+    itemCards.forEach((card) => {
+        const input = card.querySelector("input[type='number']");
+        const buttons = card.querySelectorAll("button");
+        
+        // Ensure initial input value defaults to 0
+        if (input) {
+            input.value = 0;
+            input.min = 0; // Prevent manually typing negative numbers
+        }
+
+        // Identify + and - buttons based on text content
+        buttons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                let currentVal = parseInt(input.value) || 0;
+
+                if (btn.innerText.includes("+")) {
+                    input.value = currentVal + 1;
+                } else if (btn.innerText.includes("-")) {
+                    if (currentVal > 0) {
+                        input.value = currentVal - 1;
+                    }
+                }
+            });
+        });
+    });
+
+    // Create or select bill container
+    let billContainer = document.getElementById("bill-receipt-container");
+    if (!billContainer) {
+        billContainer = document.createElement("div");
+        billContainer.id = "bill-receipt-container";
+        billContainer.style.cssText = `
+            display: none;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-image:url(ord1.png);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: #333;
+        `;
+        document.body.appendChild(billContainer);
+    }
+
+    // 2. Order Confirmation Logic
+    const confirmBtn = document.querySelector(".order .button");
+
+    confirmBtn.addEventListener("click", () => {
+        let totalBill = 0;
+        let selectedItems = [];
+
+        itemCards.forEach((card) => {
+            const title = card.querySelector("h3")?.innerText.trim();
+            const priceText = card.querySelector("h4")?.innerText.trim();
+            const quantity = parseInt(card.querySelector("input[type='number']")?.value) || 0;
+
+            if (quantity > 0 && priceText && title) {
+                // Extract digits from price string (e.g., "₹150" -> 150)
+                const price = parseInt(priceText.replace(/[^\d]/g, "")) || 0;
+                const itemTotal = price * quantity;
+
+                totalBill += itemTotal;
+                selectedItems.push({ title, quantity, price, itemTotal });
+            }
+        });
+
+        // Validation for empty cart
+        if (selectedItems.length === 0) {
+            alert("Your cart is empty! Please select at least one item.");
+            billContainer.style.display = "none";
+            return;
+        }
+
+        // 3. Construct Bill Table HTML
+        let tableRows = selectedItems.map(item => `
+            <tr style="border-bottom: 1px solid #ddd;">
+                <td style="padding: 8px; text-align: left;">${item.title}</td>
+                <td style="padding: 8px; text-align: center;">${item.quantity}</td>
+                <td style="padding: 8px; text-align: center;">₹${item.price}</td>
+                <td style="padding: 8px; text-align: right;">₹${item.itemTotal}</td>
+            </tr>
+        `).join("");
+
+        billContainer.innerHTML = `
+            <h2 style="margin: 0 0 5px 0; color: chocolate;">Straw Hat Foods</h2>
+            <p style="font-size: 12px; color: #666; margin-bottom: 15px;">Order Receipt</p>
+            <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+                <thead>
+                    <tr style="background-color: #f2f2f2;">
+                        <th style="padding: 8px; text-align: left;">Item</th>
+                        <th style="padding: 8px; text-align: center;">Qty</th>
+                        <th style="padding: 8px; text-align: center;">Price</th>
+                        <th style="padding: 8px; text-align: right;">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${tableRows}
+                </tbody>
+            </table>
+            <div style="margin-top: 15px; font-weight: bold; font-size: 16px; text-align: right;">
+                <center><h2 style="background-color:green;">Grand Total: ₹${totalBill}</h2></center>
+            </div>
+            <button id="download-bill-btn" style="
+                margin-top: 15px;
+                padding: 10px 15px;
+                background-color: #28a745;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                font-weight: bold;
+                cursor: pointer;
+            ">Download Receipt Image</button>
+        `;
+
+        billContainer.style.display = "block";
+        billContainer.scrollIntoView({ behavior: 'smooth' });
+
+        // 4. Download Receipt as Image Logic
+        document.getElementById("download-bill-btn").addEventListener("click", function() {
+            const downloadBtn = this;
+            downloadBtn.style.display = "none"; // Hide button before screenshot
+
+            if (window.html2canvas) {
+                html2canvas(billContainer).then(canvas => {
+                    const link = document.createElement("a");
+                    link.download = "StrawHatFoods_Receipt.png";
+                    link.href = canvas.toDataURL("image/png");
+                    link.click();
+                    downloadBtn.style.display = "inline-block"; // Restore button
+                });
+            } else {
+                alert("Receipt image generation library is loading. Please try again in a moment.");
+                downloadBtn.style.display = "inline-block";
+            }
+        });
+    });
+});
+    </script>
+</body>
+</html>
